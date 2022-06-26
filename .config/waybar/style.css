@@ -1,0 +1,85 @@
+/* Reset all style */
+* {
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  font-size: 12;
+  font-family: "Sarasa Gothic SC", "Font Awesome 6 Pro Solid", unifont,
+    MaterialIcons, FiraCode Nerd Font;
+  min-height: 0;
+  margin: 0;
+}
+/* The whole bar */
+window#waybar {
+  background-color: transparent;
+  color: whitesmoke;
+  font-size: 13px;
+  transition-property: background-color;
+  transition-duration: .5s;
+}
+#window {
+  font-weight: bold;
+  font-family: Fira Code,"Font Awesome 6 Pro Solid","Sarasa Gothic SC";
+}
+
+#workspaces button {
+  border-bottom: 2px solid transparent;
+  padding: 0 5px;
+  color: white;
+}
+
+#workspaces button.focused {
+  border-color: #4c7899;
+  color: white;
+  background-color: #285577;
+}
+
+#workspaces button.urgent {
+  border-color: #c9545d;
+  color: #c9545d;
+}
+
+/*each module*/
+#tray {
+    color:#285577;
+    margin-right: 6px;
+}
+#custom-poweroff {
+    margin-right: 10px;
+}
+/*#window,*/
+/* #network,
+#backlight,
+#battery,
+#clock,
+#temperature,
+#pulseaudio {
+  padding-left: 10px;
+  padding-right: 10px;
+} */
+
+/*modules styles*/
+
+#battery {
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+#battery.warning {
+  color: orange;
+}
+
+#battery.critical {
+  color: red;
+}
+
+#battery.warning.discharging {
+  animation-name: blink-warning;
+  animation-duration: 3s;
+}
+
+#battery.critical.discharging {
+  animation-name: blink-critical;
+  animation-duration: 2s;
+}

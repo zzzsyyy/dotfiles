@@ -1,0 +1,7 @@
+[user]
+	email = me@zzzsy.top
+	name = zzzsyyy
+	signingkey= "9D0B573DAE953E10CF88E4E24047E6EB114E629F"
+[commit]
+	gpgsign = true
+

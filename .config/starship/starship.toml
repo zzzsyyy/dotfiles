@@ -1,0 +1,85 @@
+# Inserts a blank line between shell prompts
+add_newline = false
+format = """
+[╭─ ](cyan)\
+$username\
+$hostname\
+$directory\
+$git_branch\
+$git_status\
+$python $rust $golang $nodejs $java $julia
+[╰─ ](cyan)\
+$character
+$time\
+"""
+
+right_format = """$cmd_duration"""
+
+#format = """
+#$username\
+#$hostname\
+#$directory\
+#$git_branch\
+#$git_state\
+#$git_status\
+#$cmd_duration\
+#$line_break\
+#$character"""
+
+[directory.substitutions]
+"Documents" = " "
+"Downloads" = " "
+"Music" = "♫ "
+"Pictures" = " "
+
+[character]
+success_symbol = "[❯](purple)"
+error_symbol = "[❯](red)"
+vicmd_symbol = "[❮](green)"
+
+[git_branch]
+format = "[$symbol $branch]($style)"
+style = "cyan"
+
+[git_status]
+format = "[[(*$conflicted$untracked$modified$staged$renamed$deleted)](218) ($ahead_behind$stashed)](218)"
+ahead = "⇡${count}"
+behind = "⇣${count}"
+stashed = "≡"
+
+
+[git_state]
+format = '\([$state( $progress_current/$progress_total)]($style)\) '
+style = "cyan"
+
+[python]
+symbol = " "
+format = "[($virtualenv)$symbol](218)"
+
+[directory]
+read_only = " "
+fish_style_pwd_dir_length = 1
+
+[golang]
+symbol = " "
+format = "[$symbol](218)"
+
+[java]
+symbol = " "
+format = "[$symbol](218)"
+
+[julia]
+symbol = " "
+format = "[$symbol](218)"
+
+[package]
+symbol = " "
+format = "[$symbol](218)"
+
+[rust]
+symbol = " "
+format = "[$symbol](218)"
+
+[nodejs]
+symbol = ""
+format = "[$symbol](218)"

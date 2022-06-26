@@ -1,0 +1,20 @@
+set {
+    $base06   #2E3440
+    $base05   #3B4252
+    $base04   #434C5E
+    $base03   #4C566A
+    $base02   #D8DEE9
+    $base01   #E5E9F0
+    $base00   #ECEFF4
+    $blue     #5E81AC
+    $yellow   #EBCB8B
+    $orange   #D08770
+    $red      #BF616A
+    $magenta  #B48EAD
+    $green    #A3BE8C
+}
+client.unfocused          $base03  $base03  $base00
+client.focused            $base06  $base06  $base00  $orange
+client.focused_inactive   $base04  $base04  $base00
+client.urgent             $red     $red     $red
+

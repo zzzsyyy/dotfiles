@@ -1,0 +1,31 @@
+patch:
+  schema_list:
+    - schema: zzzsy_flypy # 小鹤双拼
+    - schema: zzzsy_pinyin # 朙月拼音
+  switcher/caption: "[切换]"
+  switcher/hotkeys:
+    - "Control+grave"
+  switcher/save_options:
+    - full_shape
+    - ascii_punct
+  menu/page_size: 9
+  ascii_composer/good_old_caps_lock: true
+  ascii_composer/switch_key:
+    Shift_L: inline_ascii
+    Shift_R: commit_code
+    Control_L: noop
+    Control_R: noop
+    Caps_Lock: commit_code
+    Eisu_toggle: clear
+  key_binder/select_first_character: 'bracketleft'
+  key_binder/select_last_character: 'bracketright'
+  key_binder/bindings:
+    - { accept: semicolon, when: has_menu, send: 2 }
+    - { accept: apostrophe, when: has_menu, send: 3 }
+    - { accept: bracketleft, send: Page_Up, when: composing } # 左括号向上翻页
+    - { accept: bracketright, send: Page_Down, when: composing } # 右括号向下翻页
+    - { accept: "Control+Shift+F", toggle: traditionalization, when: always}
+    - { accept: "Control+period", toggle: ascii_punct, when: always}
+    - { accept: comma, send: Page_Up, when: paging}
+    - { accept: period, send: Page_Down, when: has_menu}
+

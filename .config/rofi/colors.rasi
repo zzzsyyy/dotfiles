@@ -1,0 +1,12 @@
+* {
+  al:  #00000000;
+  bg0:  #2E3440;
+  bg1:  #3B4252;
+  se:  #282A36;
+  fg:  #D8DEE9;
+  ac:  #88C0D0;
+  uc:  #EBCB8B;
+  accent-color: #88C0D0;
+  urgent-color:     #EBCB8B;
+
+}

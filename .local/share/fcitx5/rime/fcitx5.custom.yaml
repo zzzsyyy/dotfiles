@@ -1,0 +1,5 @@
+# Fcitx5 settings
+# encoding: utf-8
+patch:
+  "app_options/nvim":
+    ascii_mode: true
