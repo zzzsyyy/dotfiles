@@ -19,6 +19,7 @@ HISTFILE=~/.zsh_history
 
 ## quelques alias
 alias ls="exa"
+alias tree="exa -T -D "
 alias zshconfig="sudo nvim ~/.zshrc"
 alias n="neofetch"
 alias setproxy="export ALL_PROXY=http://127.0.0.1:20171"
