@@ -1,0 +1,76 @@
+# Rime dictionary
+# encoding: utf-8
+
+---
+name: francais
+version: "2023"
+sort: original
+...
+
+;	;;
+\	\\
+/	//
+'	'
+
+a	a
+e	e
+o	o
+u	u
+i	i
+c	c
+
+ç	;c
+
+à	;a
+â	;'a
+æ	;a
+
+é	/e
+è	\e
+ê	;'e
+ë	;e
+
+î	;'i
+ï	;i
+
+ô	;o
+œ	;'o
+
+ù	\u
+û	;'u
+ü	;u
+
+# À	;
+# Á	;;a
+# Â	;;a
+# Ä	;;a
+
+# È	;;e
+# É	;;e
+# Ê	;;e
+# Ë	;;e
+
+# Ì	;;i
+# Í	;;i
+# Î	;;i
+# Ï	;;i
+
+# Ò	;;o
+# Ó	;;o
+# Ô	;;o
+# Ö	;;o
+
+# Ù	;;u
+# Ú	;;u
+# Û	;;u
+# Ü	;;u
+
+
+# ᵉʳᵉ	`r
+# ᵉᵐ	`m
+# 2ème
+
+
+Œ	;'Oe
+
+Æ	;'Ae

@@ -1,0 +1,13 @@
+# Rime dictionary
+# encoding: utf-8
+
+---
+name: cn_dicts
+version: "2023-02-26"
+import_tables:
+  - dicts/cn_dicts/8105
+  - dicts/cn_dicts/base
+  - dicts/cn_dicts/sogou
+  - dicts/cn_dicts/tencent
+  - dicts/cn_dicts/others
+...
