@@ -2,6 +2,8 @@
 	email = me@zzzsy.top
 	name = zzzsyyy
 	signingkey= "3F2409FFE586FB7F"
+[init]
+	defaultBranch = main
 [commit]
 	gpgsign = true
 [alias]
