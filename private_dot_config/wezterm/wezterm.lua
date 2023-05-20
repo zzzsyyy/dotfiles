@@ -3,7 +3,8 @@ local wezterm = require 'wezterm'
 local function get_theme()
 	local _time = os.date("*t").hour
 	if _time >= 5 and _time < 20 then
-		return "dawnfox"
+		--return "dawnfox"
+    return "nordfox"
   else
     return "nordfox"
 	end
@@ -12,6 +13,7 @@ end
 local config = {
     -- Window
     check_for_updates = false,
+    enable_wayland = true,
     enable_scroll_bar = true,
     window_background_opacity = 0.96,
     adjust_window_size_when_changing_font_size = true,
